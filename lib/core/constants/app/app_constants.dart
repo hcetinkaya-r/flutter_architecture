@@ -4,5 +4,7 @@ class AppConstants {
 
   static const COMPANY_NAME = "HKN";
 
+  static const EMAIL_REGEX = r"^\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b";
+
 
 }
