@@ -1,11 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import '../../../../core/constants/enums/preferences_keys_enum.dart';
-import '../../../../core/init/cache/locale_manager.dart';
+
 import '../../../../core/base/state/base_state.dart';
 import '../../../../core/base/view/base_view.dart';
+import '../../../../core/constants/enums/preferences_keys_enum.dart';
 import '../../../../core/extension/string_extension.dart';
+import '../../../../core/init/cache/locale_manager.dart';
 import '../../../../core/init/language/language_manager.dart';
 import '../../../../core/init/language/locale_keys.g.dart';
 import '../test_view_model.dart';

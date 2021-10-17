@@ -13,7 +13,7 @@ extension MediaQueryExtension on BuildContext {
   double get mediumValue => height * 0.04;
   double get highValue => height * 0.1;
 }
-
+ 
 extension ThemeExtension on BuildContext {
   ThemeData get theme => Theme.of(this);
 
@@ -22,7 +22,7 @@ extension ThemeExtension on BuildContext {
   ColorScheme get colors => theme.colorScheme;
 }
 
-extension PAddingExtension on BuildContext {
+extension PaddingExtension on BuildContext {
   EdgeInsets get paddingLow => EdgeInsets.all(lowValue);
   EdgeInsets get paddingNormal => EdgeInsets.all(normalValue);
   EdgeInsets get paddingMedium => EdgeInsets.all(mediumValue);

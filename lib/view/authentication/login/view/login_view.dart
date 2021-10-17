@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_uygulama_mimarisi/core/extension/context_extension.dart';
+
 import '../../../../core/base/view/base_view.dart';
+import '../../../../core/extension/context_extension.dart';
 import '../viewModel/login_view_model.dart';
 
 class LoginView extends StatelessWidget {
@@ -23,12 +24,11 @@ class LoginView extends StatelessWidget {
             Container(
               padding: context.paddingLow,
               height: context.height * .4,
-              color: context.colors.background,
+              color: Theme.of(context).buttonTheme.colorScheme!.onPrimary,
               child: buildText(context),
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: context.lowValue),
-
             ),
           ],
         ),
@@ -36,8 +36,9 @@ class LoginView extends StatelessWidget {
 
   Text buildText(BuildContext context) {
     return Text(
-              "Hello",
-              style: context.textTheme.subtitle1,
-            );
+      "Hello",
+      style: context.textTheme.headline1!.copyWith(
+          color: context.theme.primaryColor, fontWeight: FontWeight.bold),
+    );
   }
 }
